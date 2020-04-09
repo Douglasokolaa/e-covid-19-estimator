@@ -5,7 +5,6 @@ require("impactEstimator.php");
 
 function covid19ImpactEstimator($data)
 {
-    $data = (object) $data;
     $estimator = new Estimate();
     $severeEstimator = new Estimate();
 

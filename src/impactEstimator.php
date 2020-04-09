@@ -76,12 +76,12 @@ class Estimate
 
     public function setInput($data){
       $this->days                         = $this->toDays($data->timeToElapse, $data->periodType);
-      $this->avgDailyIncomeInUSD       = $data->region->avgDailyIncomeInUSD;
-      $this->avgDailyIncomePopulation  = $data->region->avgDailyIncomePopulation;
-      $this->reportedCases             = $data->reportedCases;
-      $this->population                = $data->population;
-      $this->totalHospitalBeds         = $data->totalHospitalBeds;
-      $this->population                = $data->population;
+      $this->avgDailyIncomeInUSD       = $data['region']['avgDailyIncomeInUSD'];
+      $this->avgDailyIncomePopulation  = $data['region']['avgDailyIncomePopulation'];
+      $this->reportedCases             = $data['reportedCases'];
+      $this->population                = $data['population'];
+      $this->totalHospitalBeds         = $data['totalHospitalBeds'];
+      $this->population                = $data['population'];
         
 
     }
