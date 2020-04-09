@@ -1,6 +1,20 @@
 <?php
+header("content-type: application/json");
+
+require_once("./impactEstimator.php");
 
 function covid19ImpactEstimator($data)
 {
-  return $data;
+$estimator = new Estimate();
+$severeEstimator = new Estimate();
+
+$result = new stdClass;
+$result->data = $data;
+$result->impact = $estimator->process($data);
+$result->severeImpact = $severeEstimator->process($data,true);
+
+return json_encode($result);
 }
+
+
+
