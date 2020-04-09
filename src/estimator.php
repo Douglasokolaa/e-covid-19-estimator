@@ -9,9 +9,9 @@ function covid19ImpactEstimator($data)
     $severeEstimator = new Estimate();
 
     $result = new stdClass;
-    $result->data = $data;
-    $result->impact = $estimator->process($data);
-    $result->severeImpact = $severeEstimator->process($data, true);
+    $result['data'] = $data;
+    $result['impact'] = $estimator->process($data);
+    $result['severeImpact'] = $severeEstimator->process($data, true);
 
     return $result;
 }
