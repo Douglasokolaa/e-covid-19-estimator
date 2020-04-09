@@ -53,9 +53,9 @@ class Estimate
 
         $available = $beds4Covid19 - $severeCases;
 
-        if ($available < 0) return floor($available);
+        if ($available < 0) return round($available,0);
 
-        return floor($beds4Covid19);
+        return round($beds4Covid19,0);
     }
 
     public function casesForICUByRequestedTime($infections)
