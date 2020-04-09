@@ -90,7 +90,7 @@ class Estimate
 
         $infections= $this->infectionsByRequestedTime($this->reportedCases,$severe);
 
-       $this->result['currentlyInfexted']                  = $this->currentlyInfected;
+       $this->result['currentlyInfected']                  = $this->currentlyInfected;
        $this->result['infectionsByRequestedTime']          = $infections;
        $this->result['severeCasesByRequestedTime']         = $this->severeCasesByRequestedTime($infections);
        $this->result['hospitalBedsByRequestedTime']        = $this->hospitalBedsByRequestedTime(
