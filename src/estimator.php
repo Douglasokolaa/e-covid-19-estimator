@@ -5,16 +5,14 @@ require("impactEstimator.php");
 
 function covid19ImpactEstimator($data)
 {
-$estimator = new Estimate();
-$severeEstimator = new Estimate();
+    $data = json_decode($data);
+    $estimator = new Estimate();
+    $severeEstimator = new Estimate();
 
-$result = new stdClass;
-$result->data = $data;
-$result->impact = $estimator->process($data);
-$result->severeImpact = $severeEstimator->process($data,true);
+    $result = new stdClass;
+    $result->data = $data;
+    $result->impact = $estimator->process($data);
+    $result->severeImpact = $severeEstimator->process($data, true);
 
-return json_encode($result);
+    return json_encode($result);
 }
-
-
-
