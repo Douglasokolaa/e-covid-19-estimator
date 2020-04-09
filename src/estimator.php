@@ -1,7 +1,7 @@
 <?php
 header("content-type: application/json");
 
-require_once("./impactEstimator.php");
+require("impactEstimator.php");
 
 function covid19ImpactEstimator($data)
 {
