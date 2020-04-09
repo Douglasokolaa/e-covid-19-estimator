@@ -12,7 +12,7 @@ class Estimate
 
     public function __construct()
     {
-        $this->result = new stdClass;
+        $this->result = array();
     }
 
     public function toDays($period, $periodType)
@@ -90,16 +90,16 @@ class Estimate
 
         $infections= $this->infectionsByRequestedTime($this->reportedCases,$severe);
 
-       $this->result->currentlyInfexted                  = $this->currentlyInfected;
-       $this->result->infectionsByRequestedTime          = $infections;
-       $this->result->severeCasesByRequestedTime         = $this->severeCasesByRequestedTime($infections);
-       $this->result->hospitalBedsByRequestedTime        = $this->hospitalBedsByRequestedTime(
-                                                               $this->result->severeCasesByRequestedTime,
+       $this->result['currentlyInfexted']                  = $this->currentlyInfected;
+       $this->result['infectionsByRequestedTime']          = $infections;
+       $this->result['severeCasesByRequestedTime']         = $this->severeCasesByRequestedTime($infections);
+       $this->result['hospitalBedsByRequestedTime']        = $this->hospitalBedsByRequestedTime(
+                                                               $this->result['severeCasesByRequestedTime'],
                                                                 $this->totalHospitalBeds
                                                             );
-       $this->result->casesForICUByRequestedTime         = $this->casesForICUByRequestedTime($infections);
-       $this->result->casesForVentilatorsByRequestedTime = $this->casesForVentilatorsByRequestedTime($infections);
-       $this->result->dollarsInFlight                    = $this->dollarsInFlight($infections, $this->avgDailyIncomeInUSD,$this->avgDailyIncomePopulation);
+       $this->result['casesForICUByRequestedTime']         = $this->casesForICUByRequestedTime($infections);
+       $this->result['casesForVentilatorsByRequestedTime'] = $this->casesForVentilatorsByRequestedTime($infections);
+       $this->result['dollarsInFlight']                    = $this->dollarsInFlight($infections, $this->avgDailyIncomeInUSD,$this->avgDailyIncomePopulation);
 
        
         return $this->result;
