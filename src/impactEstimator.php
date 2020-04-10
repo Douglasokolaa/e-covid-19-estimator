@@ -44,7 +44,7 @@ class Estimate
 
     public function severeCasesByRequestedTime($infectionsByRequestedTime)
     {
-        return 0.15 * $infectionsByRequestedTime;
+        return floor(0.15 * $infectionsByRequestedTime);
     }
 
     public function hospitalBedsByRequestedTime($severeCases, $totalHospitalBeds)
