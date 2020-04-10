@@ -55,7 +55,7 @@ class Estimate
 
         if ($available < 0) return ceil($available);
 
-        return round($beds4Covid19);
+        return floor($available);
     }
 
     public function casesForICUByRequestedTime($infections)
