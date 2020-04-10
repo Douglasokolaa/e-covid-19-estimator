@@ -39,7 +39,7 @@ class Estimate
 
         $result = $currentlyInfected * pow(2, $factor);
 
-        return $result;
+        return floor($result);
     }
 
     public function severeCasesByRequestedTime($infectionsByRequestedTime)
@@ -70,7 +70,7 @@ class Estimate
 
     public function dollarsInFlight($infections, $avgIncome, $avgPopulation)
     {
-       $result = $infections * $avgPopulation * $avgIncome * $this->days;
+       $result = $infections * $avgPopulation * $avgIncome * 30;
        return round($result,2);
     }
 
