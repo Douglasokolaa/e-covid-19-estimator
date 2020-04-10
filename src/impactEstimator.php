@@ -49,10 +49,10 @@ class Estimate
 
     public function hospitalBedsByRequestedTime($severeCases, $totalHospitalBeds)
     {
-        $beds4Covid19 =  round(0.35 * $totalHospitalBeds);
+        $beds4Covid19 = floor(0.35 * $totalHospitalBeds);
 
-        $available =$beds4Covid19 - $severeCases;
-        
+        $available = $beds4Covid19 - $severeCases;
+
         if ($available < 0) return $available;
 
         return $beds4Covid19;
