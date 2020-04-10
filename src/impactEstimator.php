@@ -70,7 +70,7 @@ class Estimate
 
     public function dollarsInFlight($infections, $avgIncome, $avgPopulation)
     {
-       $result = $infections * $avgPopulation * $avgIncome * $this->days;
+       $result = ($infections * $avgPopulation * $avgIncome) / $this->days;
        return round($result,2);
     }
 
