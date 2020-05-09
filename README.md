@@ -16,7 +16,7 @@ The assessment empowers me to **attempt** helping society and leaders prepare fo
 ---
 
 ## References
-> 19.7 years is the AVG age in Africa -  [worldometers.info](https://www.worldometers.info/world-population/africa-population/)
-> AVG daily income is ~$5 for 85% of Africans - [blogs.worldbank.org]()
-> COVID-19 infections doubles every 3 days. Expect 50x (at least 10x) recported cases to be actual number of infected people - [Jason S. Warner](https://medium.com/@Jason_Scott_Warner/the-sober-math-everyone-must-understand-about-the-pandemic-2b0145881993)
-> Several stats from Harvard Medical School / Massachusetts General Hospital - move to [00:09:42 of this video](https://externalmediasite.partners.org/Mediasite/Play/53a4003de5ab4b4da5902f078744435a1d?fbclid=IwAR3-HS64-QB9AEbJdxV7ovcCB6nDXGgOkEawgTOYtQx-b720cIKVaJVPq-k)
+> 1.  19.7 years is the AVG age in Africa -  [worldometers.info](https://www.worldometers.info/world-population/africa-population/)
+> 2.  AVG daily income is ~$5 for 85% of Africans - [blogs.worldbank.org]()
+> 3.  COVID-19 infections doubles every 3 days. Expect 50x (at least 10x) recported cases to be actual number of infected people - [Jason S. Warner](https://medium.com/@Jason_Scott_Warner/the-sober-math-everyone-must-understand-about-the-pandemic-2b0145881993)
+> 4.  Several stats from Harvard Medical School / Massachusetts General Hospital - move to [00:09:42 of this video](https://externalmediasite.partners.org/Mediasite/Play/53a4003de5ab4b4da5902f078744435a1d?fbclid=IwAR3-HS64-QB9AEbJdxV7ovcCB6nDXGgOkEawgTOYtQx-b720cIKVaJVPq-k)
